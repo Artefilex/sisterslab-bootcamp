@@ -48,26 +48,23 @@ const  totalElectricExperience = pokemons.filter((pokemon) => pokemon.type === "
     "Electric türündeki Pokemon'ların toplam deneyim puanı: " +
       totalElectricExperience
   );
- const typeAverages =    pokemons.reduce((accumulator, pokemon) => {
-    const { type, experience } = pokemon;
 
+
+
+  
+  const typeAverages =    pokemons.reduce((accumulator, pokemon) => {
+    const { type, experience } = pokemon;
     if (!accumulator[type]) {
         accumulator[type] = { total: 0, count: 0 };
     }
-
     accumulator[type].total += experience;
     accumulator[type].count += 1;
-
     return accumulator;
 }, {});
-
 for (const type in typeAverages) {
     typeAverages[type] = typeAverages[type].total / typeAverages[type].count;
 }
-console.log(typeAverages)
-  const typeExperienceAverages = pokemons.reduce((total, pokemon ) =>{
-    return (total + pokemon.experience)/pokemons.length
-  },0)
-  console.log(typeExperienceAverages);
+console.log(typeAverages) 
+
 
   export default pokemons
