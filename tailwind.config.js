@@ -7,6 +7,7 @@ export default {
   theme: {
     extend: {
       colors:{
+        "bg-green": "rgb(8,255,0)",
         "bg-dark" : "rgb(56, 56, 58)",
         "bg-navbar": "rgb(46, 42, 42)",
         "bg-pokemon-card": "rgb(255, 255, 255)",

@@ -5,17 +5,18 @@ const Coin = (props) => {
   const { currentStatus, rotate } = props;
 
   return (
-    <div className="Coin-container">
-      <div className={`Coin ${rotate && 'Coin-rotate'}`}>
+    <div className="flex items-center w-full justify-center">
+       
+      <div className={` ${rotate && 'scale-0 duration-1000 transition-transform'}`}>
         <img
           src={CoinTail}
           alt=""
-          className={currentStatus === 'yazi' ? 'Coin-back' : 'Coin-front'}
+          className={currentStatus === 'yazi' ? 'hidden' : 'block'}
         />
         <img
           src={CoinHead}
           alt=""
-          className={currentStatus === 'yazi' ? 'Coin-front' : 'Coin-back'}
+          className={currentStatus === 'yazi' ? 'block' : 'hidden'}
         />
       </div>
     </div>

@@ -1,10 +1,11 @@
 import  SyntaxHighlighter from "react-syntax-highlighter"
+import { darcula } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 export default function Week1() {
   return (
     <div className=" flex items-center justify-center h-screen flex-col px-2">
-     <h1 className="text-white text-[2rem] text-center pt-2 py-8"> Alıştırmalar </h1>
-      <SyntaxHighlighter  language="javascript"  className="w-full">
+     <h1 className="w-[80%] text-center text-[2rem] my-8 py-3 border-b-4 border-white"> Alıştırmalar </h1>
+      <SyntaxHighlighter  language="javascript"  className="w-[80%]" style={darcula} >
       {
     `
     let a = 2;
