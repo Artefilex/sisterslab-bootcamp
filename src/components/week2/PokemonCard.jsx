@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import PropTypes from "prop-types"
 
 export default function PokemonCard({ poki }) {
   const { url } = poki;
@@ -48,4 +48,9 @@ export default function PokemonCard({ poki }) {
       <img src={pokemon.img}   className="absolute  group-hover:scale-x-0  group-hover:opacity-0 duration-300  object-cover min-h-[15rem]"/>
     </div>
   );
+}
+
+
+PokemonCard.propTypes = {
+  poki : PropTypes.object.isRequired
 }

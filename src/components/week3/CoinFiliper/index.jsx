@@ -28,10 +28,7 @@ export default function CoinFlipper() {
 
   return (
     <div className="flex items-center flex-col w-full">
-      <h1 className="w-[80%] text-center text-[2rem] my-8 py-3 border-b-4 border-white">
-
-        Yazı Tura Uygulamısı
-      </h1>
+      <h1 className="w-[80%] text-center text-[2rem] my-8 py-3 border-b-4 border-white">   Yazı Tura Uygulamısı  </h1>
       <div className="flex items-center flex-col w-full text-white tablet:flex-row gap-4  justify-around text-[1.6rem]">
         <div className="flex flex-col gap-4 ">
           <Coin currentStatus={currentStatus} rotate={rotate} />
