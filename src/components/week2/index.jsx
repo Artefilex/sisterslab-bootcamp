@@ -13,7 +13,7 @@ export default function Week2 (){
     }, [])
 
   return (
-    <div className="w-full flex flex-col items-center justify-center">
+    <div className="w-full flex flex-col items-center justify-center px-2">
        <h1 className="w-full text-center text-[2rem] my-8 py-3 border-y-4 border-white">Alıştırmalar</h1>
         <Assigment/>
     <h1 className="w-full text-center text-[2rem] mt-8 py-3 border-y-4 border-white">Hover item </h1>
