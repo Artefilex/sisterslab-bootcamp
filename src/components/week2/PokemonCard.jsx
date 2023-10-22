@@ -29,7 +29,7 @@ export default function PokemonCard({ poki }) {
   }, [url]);
 
   return (
-    <div className="relative flex flex-col items-center justify-center gap-2 min-h-[15rem] bg-bg-pokemon-card rounded-lg w-[16rem] group opacity-70 hover:opacity-100 transition-all duration-500" >
+    <div className="relative w-[20rem] flex flex-col items-center justify-center gap-2 min-h-[20rem] bg-bg-pokemon-card rounded-lg tablet:w-[16rem] group opacity-70 hover:opacity-100 transition-all duration-500" >
       <header className="absolute text-center opacity-0 group-hover:opacity-100 items-center flex-col transition duration-300 top-9">
         <h2 className="uppercase font-extrabold text-center text-[1.5rem] "> {pokemon.name} </h2>
         <h4 className="font-semibold text-[1.2rem] "> Deneyim Puanı = {pokemon.experience}</h4>

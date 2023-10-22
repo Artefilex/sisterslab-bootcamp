@@ -1,7 +1,10 @@
 import  SyntaxHighlighter from "react-syntax-highlighter"
+import { darcula } from "react-syntax-highlighter/dist/esm/styles/hljs"
  
 export default  function Assigment() {
-  return  <SyntaxHighlighter language="javascript"  className="w-full">
+  return (
+    <div className= "w-[25rem] mobile:w-[30rem] tablet:w-[40rem]  xtablet:w-[45rem] deskop:w-[80%]">
+        <SyntaxHighlighter language="javascript" style={darcula}  >
     {
      `
      const pokemons = [
@@ -31,7 +34,8 @@ export default  function Assigment() {
    
    console.log(doubledExperience)
    
-   const allWaterPokemonsHighExperience = pokemons.filter((pokemon) => pokemon.type === "Water").every((pokemon) => pokemon.experience > 60 )
+   const allWaterPokemonsHighExperience = pokemons.filter((pokemon) => pokemon.type === "Water")
+                                          .every((pokemon) => pokemon.experience > 60 )
    
    console.log(
      "Tüm 'Water' türündeki Pokemonlar deneyim puanı en az 60 mı?",
@@ -48,7 +52,8 @@ export default  function Assigment() {
      );
    
    
-   const  totalElectricExperience = pokemons.filter((pokemon) => pokemon.type === "Electric").reduce((total , pokemon ) => {
+   const  totalElectricExperience = pokemons.filter((pokemon) => pokemon.type === "Electric")
+                                             .reduce((total , pokemon ) => {
        return total + pokemon.experience
    }, 0 )
    
@@ -81,5 +86,7 @@ export default  function Assigment() {
     }
 
    </SyntaxHighlighter>
+    </div>
+  )
 }
 
