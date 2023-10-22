@@ -25,14 +25,16 @@ const pokemons = [
 
 console.log(doubledExperience)
 
-const allWaterPokemonsHighExperience = pokemons.every((pokemon) => pokemon.experience > 60 )
+const allWaterPokemonsHighExperience = pokemons.filter((pokemon) => pokemon.type === "Water").every((pokemon) => pokemon.experience > 60 )
+
 console.log(
   "Tüm 'Water' türündeki Pokemonlar deneyim puanı en az 60 mı?",
   allWaterPokemonsHighExperience
 );
  
 
-const someFirePokemonHighExperience = pokemons.some((pokemon) => pokemon.fire >= 70 )
+
+const someFirePokemonHighExperience = pokemons.some((pokemon) => pokemon.type === "Fire " >= 70)
 
   console.log(
     "'Fire' türündeki Pokemonlardan en az biri deneyim puanı 70 veya daha fazla mı?",
@@ -67,4 +69,4 @@ for (const type in typeAverages) {
 console.log(typeAverages) 
 
 
-  export default pokemons
+export default pokemons
