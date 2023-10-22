@@ -29,17 +29,16 @@ export default function Assigment2({ poki }) {
   }, [url]);
 
   return (
-    <div className="pokemon-area flex ">
-      <header className="flex pokemon-header">
+    <div className="flex flex-col">
+      <header className="">
         <h2> {pokemon.name} </h2>
         <h4> Deneyim Puanı = {pokemon.experience}</h4>
         <div>
-          {" "}
+    
           <h2> Type </h2>
           {pokemon.types.map((item, i) => (
-            <div key={i} className="flex-row">
-              {" "}
-              {item.type.name}{" "}
+            <div key={i} className="">
+              {item.type.name}
             </div>
           ))}
         </div>

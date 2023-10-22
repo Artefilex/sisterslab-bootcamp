@@ -1,4 +1,4 @@
-import './CoinStyles.css';
+
 import CoinTail from './tail.png';
 import CoinHead from './head.png';
 const Coin = (props) => {

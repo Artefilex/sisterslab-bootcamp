@@ -21,38 +21,3 @@ a:hover{
     background: rgba(255, 255, 255, 0.394);
 }
   
-.flex{
-   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-.flex-row{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
-}
-.grid {
-  display: grid;
-  
-  grid-template-columns: auto auto auto;
-  gap: 5rem;
-  padding-top: 4rem;
-}
-.MainLayout {
-    padding-top: 3rem;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    width: 100%;
-    gap: 5rem;
-    
-}
-.Main-Navbar{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem
-}

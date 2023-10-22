@@ -12,8 +12,8 @@ export default function Week2 (){
 
   return (
     <div>
-    <h1 className="flex">Hover item </h1>
-   <div className="grid">
+    <h1 className="">Hover item </h1>
+   <div className="grid grid-cols-1 mobile:grid-cols-2 tablet:grid-cols-3">
     
      {
        pokemons.map((pokemon , i) => (

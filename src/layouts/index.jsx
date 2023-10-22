@@ -4,12 +4,11 @@ import Navbar from "./navbar";
 export default function MainLayout () {
 
     return (
-        <div className="MainLayout ">
-           <Navbar/>   
-          
+        <div className="flex w-full  ">
+           <Navbar />   
+           <div className="flex-1 w-full px-5 py-2">
            <Outlet/> 
-       
-      
+           </div>
         </div>
     )
 }
