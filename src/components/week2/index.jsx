@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { useState } from "react"; 
-import Assigment2 from "./Assigment2";
+
+import PokemonCard from "./PokemonCard";
+import Assigment from "./assigment";
 
 export default function Week2 (){
   const [pokemons , setPokemons] = useState([])
@@ -11,18 +13,25 @@ export default function Week2 (){
     }, [])
 
   return (
-    <div>
-    <h1 className="">Hover item </h1>
-   <div className="grid grid-cols-1 mobile:grid-cols-2 tablet:grid-cols-3">
-    
-     {
-       pokemons.map((pokemon , i) => (
-        <Assigment2  key={i} poki={pokemon}/> 
-       
-       ))
-     }
+    <div className="w-full flex flex-col items-center justify-center">
+       <h1 className="w-full text-center text-[2rem] my-8 py-3 border-y-4 border-white">Alıştırmalar</h1>
+        <Assigment/>
+    <h1 className="w-full text-center text-[2rem] mt-8 py-3 border-y-4 border-white">Hover item </h1>
+
+    <div className=" grid grid-cols-1 tablet:grid-cols-2 deskop:grid-cols-3 place-content-center gap-8 py-8">    
+    {
+      pokemons.map((pokemon , i) => (
+       <PokemonCard  key={i} poki={pokemon}/> 
+      
+      ))
+    }
+
+  
+ 
+    </div>
+  
    
-   </div>
+
   </div>
   )
 }

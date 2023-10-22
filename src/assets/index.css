@@ -21,3 +21,21 @@ a:hover{
     background: rgba(255, 255, 255, 0.394);
 }
   
+
+.pokemon-area {
+   opacity: 0.7;
+    transition: opacity 0.5s
+  }
+.pokemon-area:hover {
+    opacity: 1; /* Change opacity to 1 on hover to make it visible */
+  }
+
+  .pokemon-area:hover .pokemon-header{
+    display: flex;
+
+
+}
+.pokemon-area:hover img{
+   display: none;
+
+}

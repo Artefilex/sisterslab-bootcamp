@@ -8,7 +8,9 @@ export default {
     extend: {
       colors:{
         "bg-dark" : "rgb(56, 56, 58)",
-        "bg-navbar": "rgb(46, 42, 42)"
+        "bg-navbar": "rgb(46, 42, 42)",
+        "bg-pokemon-card": "rgb(255, 255, 255)",
+        "box-shadow": "rgba(77, 77, 77, 0.25) 0px 14px 28px, rgba(133, 133, 133, 0.22) 0px 10px 10px"
       },
       screens: {
         "smobile": "400px",
