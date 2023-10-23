@@ -49,8 +49,8 @@ const HamburgerApp = () => {
     <div className="w-full flex items-center flex-col">
       <h1 className="w-[80%] text-center text-[2rem] my-8 py-3 border-b-4 border-white">  Hamburger App </h1>
     
-      <div className="w-full flex flex-col tablet:flex-row items-center tablet:items-start justify-around text-white text-[1.4rem]">     
-        <div className="flex flex-col gap-5  ">
+      <div className="w-[90%] gap-5 flex flex-col tablet:flex-row items-center tablet:items-start justify-around text-white text-[1.4rem]">     
+        <div className="flex flex-col gap-5 w-full max-w-[35rem] ">
           <h2 className="text-[1.7rem] font-bold">Eklenecek Malzemeler</h2>
           <ul className="w-full flex flex-col gap-5">
             {ingredientsToAdd.map((ingredient) => (

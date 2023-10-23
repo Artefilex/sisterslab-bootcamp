@@ -8,7 +8,6 @@ export default function Week3 (){
         <div  className="flex flex-col gap-24">
             <CoinFlipper/>
             <HamburgerApp/>
-         
         </div>
     )
 }
