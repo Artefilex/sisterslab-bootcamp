@@ -3,11 +3,11 @@ import { useState , useEffect} from "react";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 799);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 699);
   const [active , setActive] = useState(false)
   useEffect(() => {
       const handleResize = () => {
-        setIsMobile(window.innerWidth <= 799);
+        setIsMobile(window.innerWidth <= 699);
       };
   
       window.addEventListener("resize", handleResize);
@@ -18,10 +18,10 @@ export default function Navbar() {
     }, []);
 
   return (
-  <div className="flex items-center w-full mobile:items-start px-4 mobile:px-0 mobile:w-[12rem]" >
+  <div className="flex items-center w-full mobile:items-start bg-bg-navbar  mobile:w-[12rem]" >
   {
     !isMobile && (
-      <nav className="flex flex-col gap-3 w-[12rem] h-screen bg-bg-navbar sticky top-0 text-[1.2rem] ">
+      <nav className="flex flex-col gap-3 w-[12rem] h-screen  sticky top-0 text-[1.2rem] ">
       <Link to={"/week1"} > <h2>Hafta 1</h2> </Link>
       <Link to={"/week2"}> <h2> Hafta 2</h2> </Link>
       <Link to={"/week3"}> <h2>Hafta 3</h2> </Link>
@@ -31,8 +31,8 @@ export default function Navbar() {
 
  {
  isMobile && (
-    <div className="fixed top-0 w-full flex items-center flex-col z-[20]" >
-   <div className=" w-full flex items-center justify-between bg-bg-navbar text-white px-5 ">
+    <div className="fixed top-0 w-full flex items-center flex-col z-[20] bg-bg-navbar" >
+   <div className=" w-full flex items-center justify-between  text-white px-5 ">
    <h2 className="font-bold text-[1.75rem]"> Haftalar</h2>
    <button onClick={() => setActive(!active)}className=" h-[5rem] transition-all duration-300 rounded-sm px-4 py-2 shadow-xl  active:top-[0.2rem] ">
    

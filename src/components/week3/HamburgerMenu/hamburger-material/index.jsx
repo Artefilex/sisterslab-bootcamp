@@ -6,7 +6,7 @@ export default function HamburgerMaterial ({selectedIngredients}) {
     } ,0)
     console.log(totalPrice)
     return (
-        <div>
+        <div className="flex  flex-col gap-4 w-[80%] mt-5">
               <h2 className="text-[1.7rem] font-bold">Malzemeler</h2>
         <ul>
           {selectedIngredients.map((ingredient) => (
@@ -17,9 +17,7 @@ export default function HamburgerMaterial ({selectedIngredients}) {
         </ul>
 
         
-          {  totalPrice > 0 &&<div className=""> Toplam Tutar :{totalPrice} TL </div>
-            
-          }
+          {  totalPrice > 0 &&<div className=""> Toplam Tutar :{totalPrice} TL </div>   }
        
         </div>
     )
