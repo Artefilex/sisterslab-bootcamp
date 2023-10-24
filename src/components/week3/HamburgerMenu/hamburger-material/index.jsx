@@ -24,7 +24,7 @@ export default function HamburgerMaterial ({selectedIngredients}) {
    },[])
 
     const fetchData = ()=> {
-      fetch(`https://v6.exchangerate-api.com/v6/${import.meta.env.VITE_BANK_DATA_API}/latest/TRY`)
+      fetch(`https://v6.exchangerate-api.com/v6/f2b6324cdf1bb9b1e177a497/latest/TRY`)
        .then((res) => res.json())
       .then((data) => setConvert(data.conversion_rates))
     }
